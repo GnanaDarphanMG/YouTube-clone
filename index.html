@@ -1,0 +1,104 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Material Icons -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"> 
+    <link rel="stylesheet" type="text/css" href="your_website_domain/css_root/flaticon.css"> 
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" /> 
+    <title>Youtube</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <!-- Header Starts -->
+    <div class="header">
+      <div class="header__left">
+        <i id="menu" class="material-icons">menu</i>
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/8gzcr6RpGStvZFA2qRt4v6-1200-80.jpg"
+          alt=""
+        />
+      </div>
+
+            
+            <div id="search">
+      
+          		<input type="text" id="video" placeholder="Search" />
+				<span onclick="searchVideos()">
+         		 <button><i class="material-icons">search</i></button>
+                            </span>
+       	
+            </div>
+
+    
+      
+      <div class="header__icons">
+        <i class="material-icons">videocam</i>
+        <i class="material-icons">apps</i>
+        <i class="material-icons">notifications</i>
+        <i class="material-icons display-this">account_circle</i>
+      </div>
+    </div>
+    <!-- Header Ends -->
+
+    <!-- Main Body Starts -->
+    <div class="mainBody">
+      <!-- Sidebar Starts -->
+
+      <div class="sidebar">
+        <div class="sidebar__categories">
+          <div class="sidebar__category">
+            <i class="material-icons">home</i>
+            <span>Home</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">local_fire_department</i>
+            <span>Trending</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">subscriptions</i>
+            <span>Subcriptions</span>
+          </div>
+        </div>
+        <hr />
+        <div class="sidebar__categories">
+          <div class="sidebar__category">
+            <i class="material-icons">library_add_check</i>
+            <span>Library</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">history</i>
+            <span>History</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">play_arrow</i>
+            <span>Your Videos</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">watch_later</i>
+            <span>Watch Later</span>
+          </div>
+          <div class="sidebar__category">
+            <i class="material-icons">thumb_up</i>
+            <span>Liked Videos</span>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <!-- Sidebar Ends -->
+
+      
+	
+	<div class="videos" id="videodiv">
+	</div>
+
+	
+    <script src="index.js"></script>
+    <!-- Main Body Ends -->
+  </body>
+</html>
