@@ -144,7 +144,7 @@ h1 {
 }
 
 @media (max-width: 425px) {
-  .header__search {
+  .SearchBar {
     display: none;
   }
 
@@ -179,7 +179,7 @@ h1 {
 }
 
 @media (max-width: 941px) {
-  .header__search input {
+  .SearchBar input {
     width: 300px;
   }
 }
