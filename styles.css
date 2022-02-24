@@ -38,15 +38,13 @@ body {
   padding: 0 7px;
   cursor: pointer;
 }
-#search
+.SearchBar
 {
-display:flex;
-width: 230px;
-margin:10;
+display: flex;
 }
-#search input
+.SearchBar input
 {
-  width:30px;
+width:400px;
 }
 
 
