@@ -44,6 +44,10 @@ display:flex;
 width: 230px;
 margin:10;
 }
+#search input
+{
+  width:30px;
+}
 
 
 /* Sidebar */
