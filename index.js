@@ -16,7 +16,7 @@ async function display(){
 
     // q = Popular Videos --> Popular%20Videos (%20 -> Space)
 
-    let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&eventType=none&q=thw%20weekend&key=AIzaSyB-DOo5cW04OY-ZjEuiGvqVROiU5s2vtjs&maxResults=25`);
+    let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?q=${query}&type=video&key=AIzaSyB-DOo5cW04OY-ZjEuiGvqVROiU5s2vtjs&maxResults=25`);
 
     let data = await res.json();
     
@@ -43,7 +43,7 @@ async function searchVideos(){
     let query = document.getElementById("video").value; // Search String/ Query String
 
 
-let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&eventType=none&q=thw%20weekend&key=AIzaSyB-DOo5cW04OY-ZjEuiGvqVROiU5s2vtjs&maxResults=25`);
+let res = await fetch(`https://youtube.googleapis.com/youtube/v3/search?q=${query}&type=video&key=AIzaSyB-DOo5cW04OY-ZjEuiGvqVROiU5s2vtjs&maxResults=25`);
 let data = await res.json();
 
 for({id:{videoId}}of data.items)
